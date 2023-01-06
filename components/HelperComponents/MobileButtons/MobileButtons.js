@@ -23,7 +23,7 @@ function MobileButtons({ validate, navigate }) {
   if (showButtons) {
     return (
       <div
-        className={`fixed w-[100%] bottom-4 flex items-center sm:hidden ${
+        className={`fixed z-10 w-[100%] bottom-4 flex items-center sm:hidden ${
           (showBackButton && showNextButton) || showConfirmButton
             ? "justify-between"
             : "justify-end"
