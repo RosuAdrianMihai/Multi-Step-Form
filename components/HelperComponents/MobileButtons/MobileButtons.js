@@ -23,7 +23,7 @@ function MobileButtons({ validate, navigate }) {
   if (showButtons) {
     return (
       <div
-        className={`fixed bg-white z-10 w-screen bottom-0 py-3 flex items-center sm:hidden ${
+        className={`fixed bg-white z-10 w-screen left-0 bottom-0 py-3 flex items-center sm:hidden ${
           (showBackButton && showNextButton) || showConfirmButton
             ? "justify-between"
             : "justify-end"
