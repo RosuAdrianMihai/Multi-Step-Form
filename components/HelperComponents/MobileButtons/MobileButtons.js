@@ -30,19 +30,19 @@ function MobileButtons({ validate, navigate }) {
         }`}
       >
         {showBackButton && (
-          <div className="pl-[5vw]">
+          <div className="pl-[6.5vw]">
             <BackButton />
           </div>
         )}
 
         {showNextButton && (
-          <div className="pr-[5vw]">
+          <div className="pr-[6.5vw]">
             <NextButton validate={validate} />
           </div>
         )}
 
         {showConfirmButton && (
-          <div className="pr-[5vw]">
+          <div className="pr-[6.5vw]">
             <ConfirmButton navigate={navigate} />
           </div>
         )}
