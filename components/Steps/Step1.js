@@ -124,7 +124,10 @@ function Step1() {
             onChange={(event) => {
               const fieldObj = {
                 value: event.currentTarget.value,
-                valid: event.currentTarget.value.match(emailRegex),
+                valid:
+                  event.currentTarget.value.match(emailRegex) !== null
+                    ? true
+                    : false,
               };
 
               dispatchUserData({ type: "field", field: "email", fieldObj });
@@ -162,7 +165,10 @@ function Step1() {
             onChange={(event) => {
               const fieldObj = {
                 value: event.currentTarget.value,
-                valid: event.currentTarget.value.match(phoneRegex),
+                valid:
+                  event.currentTarget.value.match(phoneRegex) !== null
+                    ? true
+                    : false,
               };
 
               dispatchUserData({ type: "field", field: "phone", fieldObj });
